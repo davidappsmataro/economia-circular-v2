@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-roboto font-light;
+}
+
+main {
+  @apply mb-20;
+}
+
+.button-primary {
+  @apply bg-primary text-secondary inline-block py-2 px-4 rounded hover:bg-primary_dark transition-colors;
+}
