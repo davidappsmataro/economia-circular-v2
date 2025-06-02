@@ -2,14 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-roboto font-light;
+@layer base {
+  body {
+    @apply font-roboto font-light;
+  }
+
+  main {
+    @apply mb-20;
+  }
 }
 
-main {
-  @apply mb-20;
+@layer components {
+  .button-primary {
+    @apply bg-primary text-secondary inline-block py-2 px-4 rounded hover:bg-primary_dark transition-colors;
+  }
+  .badge {
+    @apply bg-primary text-secondary px-2 py-1 text-xl rounded-lg font-bold inline-block;
+  }
 }
-
-.button-primary {
-  @apply bg-primary text-secondary inline-block py-2 px-4 rounded hover:bg-primary_dark transition-colors;
+.text-cite::before {
+  content: "__ ";
+  font-size: 1rem;
+  position: absolute;
+  left: 6.2rem;
+  top: -0.3rem;
 }

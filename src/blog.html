@@ -138,11 +138,11 @@
         />
       </picture>
     </div>
-    <main class="max-w-[1140px] w-full mx-auto p-8">
+    <main class="max-w-[1140px] w-full mx-auto p-8 text-xl">
       <div class="w-4/5 mx-auto">
         <h1 class="text-4xl font-bold text-center leading-[46px]">
           La Economía Circular: Un Modelo para un Futuro Sostenible
-          <span class="badge text-bg-primary text-secondary">Novedad</span>
+          <include src="./views/badge.html"></include>
         </h1>
         <div class="flex flex-col mt-8 md:flex-row md:gap-x-8 items-start">
           <p class="text-primary text-2xl font-bold leading-10">
@@ -163,14 +163,21 @@
             reciclan.
           </p>
         </div>
-        <include src="./views/separator.html"></include>
-        <section class="blog__main-section-pilares">
-          <h2 class="blog__main-section-pilares-subtitle">
-            Pilares de la Economía Circular
-          </h2>
-          <ol class="blog__main-section-pilares-list">
-            <li class="blog__main-section-pilares-list-item">
-              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+      </div>
+      <include src="./views/separator.html"></include>
+      <section class="w-4/5 mx-auto">
+        <h2 class="text-4xl text-primary font-medium">
+          Pilares de la Economía Circular
+        </h2>
+        <ol class="mt-8 space-y-8">
+          <li>
+            <div class="flex items-center gap-2">
+              <svg
+                class="block"
+                width="50"
+                height="50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <circle cx="25" cy="25" r="20" fill="#009c84" />
                 <text
                   x="25"
@@ -184,17 +191,24 @@
                 </text>
               </svg>
 
-              <strong class="blog__main-section-pilares-list-item-title"
+              <strong class="block"
                 >Maximización del valor de los recursos</strong
               >
-              <p class="blog__main-section-pilares-list-item-text">
-                La economía circular busca extender el ciclo de vida de los
-                productos mediante la reutilización, reparación y reciclaje,
-                reduciendo así los residuos y optimizando el uso de materiales.
-              </p>
-            </li>
-            <li class="blog__main-section-pilares-list-item">
-              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+            </div>
+            <p class="mt-2 pl-14">
+              La economía circular busca extender el ciclo de vida de los
+              productos mediante la reutilización, reparación y reciclaje,
+              reduciendo así los residuos y optimizando el uso de materiales.
+            </p>
+          </li>
+          <li>
+            <div class="flex items-center gap-2">
+              <svg
+                class="block"
+                width="50"
+                height="50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <circle cx="25" cy="25" r="20" fill="#009c84" />
                 <text
                   x="25"
@@ -207,18 +221,24 @@
                   2
                 </text>
               </svg>
-              <strong class="blog__main-section-pilares-list-item-title"
+              <strong class="block"
                 >Impacto positivo en el cambio climático</strong
               >
-              <p class="blog__main-section-pilares-list-item-text">
-                Al disminuir la extracción de materias primas y las emisiones
-                asociadas a la producción, este modelo contribuye
-                significativamente a la reducción de gases de efecto
-                invernadero.
-              </p>
-            </li>
-            <li class="blog__main-section-pilares-list-item">
-              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+            </div>
+            <p class="mt-2 pl-14">
+              Al disminuir la extracción de materias primas y las emisiones
+              asociadas a la producción, este modelo contribuye
+              significativamente a la reducción de gases de efecto invernadero.
+            </p>
+          </li>
+          <li>
+            <div class="flex items-center gap-2">
+              <svg
+                class="block"
+                width="50"
+                height="50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <circle cx="25" cy="25" r="20" fill="#009c84" />
                 <text
                   x="25"
@@ -231,24 +251,24 @@
                   3
                 </text>
               </svg>
-              <strong class="blog__main-section-pilares-list-item-title"
-                >Colaboración y educación</strong
-              >
-              <p class="blog__main-section-pilares-list-item-text">
-                Para que la economía circular sea efectiva, es esencial la
-                cooperación entre gobiernos, empresas y ciudadanos, junto con la
-                promoción de la educación y la sensibilización sobre prácticas
-                sostenibles.
-              </p>
-            </li>
-          </ol>
-        </section>
-        <hr class="blog__main-separator" />
-        <article class="blog__main-article">
-          <h2 class="blog__main-article-title">
+              <strong class="block">Colaboración y educación</strong>
+            </div>
+            <p class="mt-2 pl-14">
+              Para que la economía circular sea efectiva, es esencial la
+              cooperación entre gobiernos, empresas y ciudadanos, junto con la
+              promoción de la educación y la sensibilización sobre prácticas
+              sostenibles.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <include src="./views/separator.html"></include>
+      <article>
+        <div class="mx-auto w-4/5">
+          <h2 class="text-4xl text-primary font-medium">
             La Importancia de la Economía Circular
           </h2>
-          <p class="blog__main-article-text">
+          <p class="mt-8 mb-4">
             La economía circular no solo busca reducir los residuos, sino
             también maximizar el valor de los recursos a lo largo de su ciclo de
             vida. Esto implica diseñar productos más duraderos, fomentar la
@@ -257,264 +277,267 @@
             ya están adoptando prácticas circulares, demostrando que es posible
             combinar sostenibilidad con rentabilidad.
           </p>
-          <figure class="text-center mt-2">
-            <blockquote class="blockquote">
-              <p class="fw-bold">
+          <figure class="my-8">
+            <blockquote class="text-center">
+              <p class="font-bold">
                 En la naturaleza no existe el concepto de residuo; todo es un
                 recurso.
               </p>
             </blockquote>
-            <figcaption class="blockquote-footer">
-              William McDonough, coautor de
-              <cite>Cradle to Cradle: Remaking the Way We Make Things.</cite>
-            </figcaption>
-          </figure>
-
-          <figure class="blog__main-article-figure figure">
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="
-                  assets/images/blog/economia.jpg?as=avif&width=2000 2000w,
-                  assets/images/blog/economia.jpg?as=avif&width=1750 1750w,
-                  assets/images/blog/economia.jpg?as=avif&width=1375 1375w,
-                  assets/images/blog/economia.jpg?as=avif&width=1200 1200w
-                "
-                sizes="100vw"
-                type="image/avif"
-              />
-              <source
-                media="(min-width: 1201px)"
-                srcset="
-                  assets/images/blog/economia.jpg?as=webp&width=2000 2000w,
-                  assets/images/blog/economia.jpg?as=webp&width=1750 1750w,
-                  assets/images/blog/economia.jpg?as=webp&width=1375 1375w,
-                  assets/images/blog/economia.jpg?as=webp&width=1200 1200w
-                "
-                sizes="100vw"
-                type="image/webp"
-              />
-
-              <source
-                media="(min-width: 1201px)"
-                srcset="
-                  assets/images/blog/economia.jpg?width=2000 2000w,
-                  assets/images/blog/economia.jpg?width=1750 1750w,
-                  assets/images/blog/economia.jpg?width=1375 1375w,
-                  assets/images/blog/economia.jpg?width=1200 1200w
-                "
-                sizes="100vw"
-                type="image/jpeg"
-              />
-              <source
-                media="(min-width: 993px)"
-                srcset="
-                  assets/images/blog/economia.jpg?as=avif&width=1200 1200w,
-                  assets/images/blog/economia.jpg?as=avif&width=1100 1100w,
-                  assets/images/blog/economia.jpg?as=avif&width=992   992w
-                "
-                sizes="100vw"
-                type="image/avif"
-              />
-              <source
-                media="(min-width: 993px)"
-                srcset="
-                  assets/images/blog/economia.jpg?as=webp&width=1200 1200w,
-                  assets/images/blog/economia.jpg?as=webp&width=1100 1100w,
-                  assets/images/blog/economia.jpg?as=webp&width=992   992w
-                "
-                sizes="100vw"
-                type="image/webp"
-              />
-
-              <source
-                media="(min-width: 993px)"
-                srcset="
-                  assets/images/blog/economia.jpg?width=1200 1200w,
-                  assets/images/blog/economia.jpg?width=1100 1100w,
-                  assets/images/blog/economia.jpg?width=992   992w
-                "
-                sizes="100vw"
-                type="image/jpeg"
-              />
-              <source
-                media="(min-width: 769px)"
-                srcset="
-                  assets/images/blog/economia.jpg?as=webp&width=992 992w,
-                  assets/images/blog/economia.jpg?as=webp&width=768 768w
-                "
-                sizes="100vw"
-                type="image/webp"
-              />
-
-              <source
-                media="(min-width: 769px)"
-                srcset="
-                  assets/images/blog/economia.jpg?width=992 992w,
-                  assets/images/blog/economia.jpg?width=768 768w
-                "
-                sizes="100vw"
-                type="image/jpeg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="
-                  assets/images/blog/economia.jpg?as=webp&width=992 992w,
-                  assets/images/blog/economia.jpg?as=webp&width=768 768w,
-                  assets/images/blog/economia.jpg?as=webp&width=640 640w,
-                  assets/images/blog/economia.jpg?as=webp&width=480 480w
-                "
-                sizes="100vw"
-                type="image/webp"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="
-                  assets/images/blog/economia.jpg?width=992 992w,
-                  assets/images/blog/economia.jpg?width=768 768w,
-                  assets/images/blog/economia.jpg?width=640 640w,
-                  assets/images/blog/economia.jpg?width=480 480w
-                "
-                sizes="100vw"
-                type="image/jpeg"
-              />
-
-              <img
-                class="main__section-cartel"
-                src="assets/images/blog/economia.jpg"
-                loading="lazy"
-                alt="Cartel de arbol con monedas en las raices"
-              />
-            </picture>
             <figcaption
-              class="blog__main-article-img-figcaption figure-caption text-end"
+              class="text-cite relative text-center text-gray-600 text-[16.8px]"
             >
-              Tree Growing on Coins - <cite>Arthon meekodong</cite>.
+              &nbsp;&nbsp;William McDonough, coautor de
+              <cite class="text-gray-500"
+                >Cradle to Cradle: Remaking the Way We Make Things.</cite
+              >
             </figcaption>
           </figure>
-          <p class="blog__main-article-text">
+        </div>
+
+        <figure>
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="
+                assets/images/blog/economia.jpg?as=avif&width=2000 2000w,
+                assets/images/blog/economia.jpg?as=avif&width=1750 1750w,
+                assets/images/blog/economia.jpg?as=avif&width=1375 1375w,
+                assets/images/blog/economia.jpg?as=avif&width=1200 1200w
+              "
+              sizes="100vw"
+              type="image/avif"
+            />
+            <source
+              media="(min-width: 1201px)"
+              srcset="
+                assets/images/blog/economia.jpg?as=webp&width=2000 2000w,
+                assets/images/blog/economia.jpg?as=webp&width=1750 1750w,
+                assets/images/blog/economia.jpg?as=webp&width=1375 1375w,
+                assets/images/blog/economia.jpg?as=webp&width=1200 1200w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 1201px)"
+              srcset="
+                assets/images/blog/economia.jpg?width=2000 2000w,
+                assets/images/blog/economia.jpg?width=1750 1750w,
+                assets/images/blog/economia.jpg?width=1375 1375w,
+                assets/images/blog/economia.jpg?width=1200 1200w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+            <source
+              media="(min-width: 993px)"
+              srcset="
+                assets/images/blog/economia.jpg?as=avif&width=1200 1200w,
+                assets/images/blog/economia.jpg?as=avif&width=1100 1100w,
+                assets/images/blog/economia.jpg?as=avif&width=992   992w
+              "
+              sizes="100vw"
+              type="image/avif"
+            />
+            <source
+              media="(min-width: 993px)"
+              srcset="
+                assets/images/blog/economia.jpg?as=webp&width=1200 1200w,
+                assets/images/blog/economia.jpg?as=webp&width=1100 1100w,
+                assets/images/blog/economia.jpg?as=webp&width=992   992w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 993px)"
+              srcset="
+                assets/images/blog/economia.jpg?width=1200 1200w,
+                assets/images/blog/economia.jpg?width=1100 1100w,
+                assets/images/blog/economia.jpg?width=992   992w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="
+                assets/images/blog/economia.jpg?as=webp&width=992 992w,
+                assets/images/blog/economia.jpg?as=webp&width=768 768w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 769px)"
+              srcset="
+                assets/images/blog/economia.jpg?width=992 992w,
+                assets/images/blog/economia.jpg?width=768 768w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                assets/images/blog/economia.jpg?as=webp&width=992 992w,
+                assets/images/blog/economia.jpg?as=webp&width=768 768w,
+                assets/images/blog/economia.jpg?as=webp&width=640 640w,
+                assets/images/blog/economia.jpg?as=webp&width=480 480w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                assets/images/blog/economia.jpg?width=992 992w,
+                assets/images/blog/economia.jpg?width=768 768w,
+                assets/images/blog/economia.jpg?width=640 640w,
+                assets/images/blog/economia.jpg?width=480 480w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+
+            <img
+              class="mt-8"
+              src="assets/images/blog/economia.jpg"
+              loading="lazy"
+              alt="Cartel de arbol con monedas en las raices"
+            />
+          </picture>
+          <figcaption class="flex justify-end text-[16px] text-gray-600">
+            Tree Growing on Coins - <cite>Arthon meekodong</cite>.
+          </figcaption>
+        </figure>
+        <div class="flex flex-col mx-auto w-4/5">
+          <p class="my-4">
             Además, este enfoque tiene un impacto positivo en la lucha contra el
             cambio climático. Al reducir la extracción de materias primas y las
             emisiones asociadas a la producción, la economía circular contribuye
             significativamente a la disminución de gases de efecto invernadero.
           </p>
-          <p class="blog__main-article-text">
+          <p class="my-4">
             Sin embargo, para que este modelo sea exitoso, es fundamental la
             colaboración entre gobiernos, empresas y ciudadanos. La educación y
             la sensibilización juegan un papel clave para fomentar hábitos
             sostenibles y apoyar políticas que impulsen la transición hacia una
             economía circular.
           </p>
-          <p class="blog__main-article-text">
+          <p class="my-4">
             La economía circular no es solo una tendencia, sino una necesidad
             para garantizar un futuro sostenible para las próximas generaciones.
             ¿Estamos listos para abrazar este cambio?
           </p>
-        </article>
-        <section class="blog__main-section-related">
-          <h2 class="blog__main-section-related-title">
-            Artículos Relacionados
-          </h2>
-          <div class="blog__main-section-related-list">
-            <article class="blog__main-section-related-list-item">
-              <div
-                class="blog__main-section-related-list-item-card card"
-                style="width: 18rem"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      assets/images/speakers/persona1.png?as=webp&width=504 504w,
-                      assets/images/speakers/persona1.png?as=webp&width=252 252w
-                    "
-                    sizes="252px"
-                    type="image/webp"
-                  />
-                  <img
-                    src="/src/assets/images/speakers/persona1.png"
-                    class="card-img-top"
-                    alt="Imagen de María López"
-                    loading="lazy"
-                    width="252"
-                  />
-                </picture>
-                <div class="card-body">
-                  <h5 class="card-title">María López</h5>
-                  <h6 class="card-subtitle mt-2 mb-2">
-                    Innovación en la gestión de residuos urbanos
-                  </h6>
+        </div>
+      </article>
+      <section class="mt-8">
+        <h2 class="text-4xl text-primary font-medium w-4/5 mx-auto">
+          Artículos Relacionados
+        </h2>
+        <div class="flex flex-wrap justify-center mt-8 text-lg gap-8 mx-auto">
+          <article
+            class="flex flex-col justify-center items-center border-2 border-primary rounded-lg p-4"
+          >
+            <div class="rounded-lg overflow-hidden w-60">
+              <picture>
+                <source
+                  srcset="
+                    assets/images/speakers/persona1.png?as=webp&width=504 504w,
+                    assets/images/speakers/persona1.png?as=webp&width=252 252w
+                  "
+                  sizes="252px"
+                  type="image/webp"
+                />
+                <img
+                  class="w-full"
+                  src="/src/assets/images/speakers/persona1.png"
+                  alt="Imagen de María López"
+                  width="252"
+                />
+              </picture>
 
-                  <a href="#" class="btn btn-primary">+Info</a>
-                </div>
-              </div>
-            </article>
-            <article class="blog__main-section-related-list-item">
-              <div
-                class="blog__main-section-related-list-item-card card"
-                style="width: 18rem"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      assets/images/speakers/persona2.png?as=webp&width=504 504w,
-                      assets/images/speakers/persona2.png?as=webp&width=252 252w
-                    "
-                    sizes="252px"
-                    type="image/webp"
-                  />
-                  <img
-                    class="card-img-top"
-                    src="/src/assets/images/speakers/persona2.png"
-                    alt="Imagen de Javier Gómez"
-                    loading="lazy"
-                    width="252"
-                  />
-                </picture>
-                <div class="card-body">
-                  <h5 class="card-title">Carlos Fernández</h5>
-                  <h6 class="card-subtitle mt-2 mb-2">
-                    El papel de las empresas en la economía circular
-                  </h6>
+              <div class="p-4">
+                <h5 class="text-xl font-medium text-primary">María López</h5>
+                <h6 class="font-medium leading-5 mt-2 mb-2">
+                  Innovación en la gestión de residuos urbanos
+                </h6>
 
-                  <a href="#" class="btn btn-primary">+Info</a>
-                </div>
+                <a href="#" class="button-primary mt-3">+Info</a>
               </div>
-            </article>
-            <article class="blog__main-section-related-list-item">
-              <div
-                class="blog__main-section-related-list-item-card card"
-                style="width: 18rem"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      assets/images/speakers/persona5.png?as=webp&width=504 504w,
-                      assets/images/speakers/persona5.png?as=webp&width=252 252w
-                    "
-                    sizes="252px"
-                    type="image/webp"
-                  />
-                  <img
-                    class="card-img-top"
-                    src="/src/assets/images/speakers/persona5.png"
-                    alt="Imagen de Ana Martínez"
-                    loading="lazy"
-                    width="252"
-                  />
-                </picture>
-                <div class="card-body">
-                  <h5 class="card-title">Ana Martínez</h5>
-                  <h6 class="card-subtitle mt-2 mb-2">
-                    Diseño sostenible: productos para un futuro circular
-                  </h6>
+            </div>
+          </article>
+          <article
+            class="flex flex-col justify-center items-center border-2 border-primary rounded-lg p-4"
+          >
+            <div class="rounded-lg overflow-hidden w-60">
+              <picture>
+                <source
+                  srcset="
+                    assets/images/speakers/persona2.png?as=webp&width=504 504w,
+                    assets/images/speakers/persona2.png?as=webp&width=252 252w
+                  "
+                  sizes="252px"
+                  type="image/webp"
+                />
+                <img
+                  class="w-full"
+                  src="/src/assets/images/speakers/persona2.png"
+                  alt="Imagen de Javier Gómez"
+                  width="252"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="p-4">
+                <h5 class="text-xl font-medium text-primary">
+                  Carlos Fernández
+                </h5>
+                <h6 class="font-medium leading-5 mt-2 mb-2">
+                  El papel de las empresas en la economía circular
+                </h6>
 
-                  <a href="#" class="btn btn-primary">+Info</a>
-                </div>
+                <a href="#" class="button-primary mt-3">+Info</a>
               </div>
-            </article>
-          </div>
-        </section>
-      </div>
+            </div>
+          </article>
+          <article
+            class="flex flex-col justify-center items-center border-2 border-primary rounded-lg p-4"
+          >
+            <div class="rounded-lg overflow-hidden w-60">
+              <picture>
+                <source
+                  srcset="
+                    assets/images/speakers/persona5.png?as=webp&width=504 504w,
+                    assets/images/speakers/persona5.png?as=webp&width=252 252w
+                  "
+                  sizes="252px"
+                  type="image/webp"
+                />
+                <img
+                  class="w-full"
+                  src="/src/assets/images/speakers/persona5.png"
+                  alt="Imagen de Ana Martínez"
+                  width="252"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="p-4">
+                <h5 class="text-xl font-medium text-primary">Ana Martínez</h5>
+                <h6 class="font-medium leading-5 mt-2 mb-2">
+                  Diseño sostenible: productos para un futuro circular
+                </h6>
+
+                <a href="#" class="button-primary mt-3">+Info</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>

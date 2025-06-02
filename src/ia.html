@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking contest 2024 edition</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+  </head>
+
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="font-sans">
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center px-6 py-4">
+        <h1 class="text-lg font-medium">Cooking contest 2024 edition</h1>
+        <ul class="flex gap-6 text-sm">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">The contest</a></li>
+          <li><a href="#" class="hover:underline">Recipes</a></li>
+          <li>
+            <a href="#" class="px-4 py-2 rounded bg-black text-white"
+              >Contestants</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header -->
+      <header class="text-center py-16">
+        <h2 class="text-3xl font-bold">Contestants</h2>
+        <p class="text-gray-500 mt-2">
+          This section describes the recipes of the best contestants
+        </p>
+      </header>
+
+      <!-- Hero Image -->
+      <div class="px-6">
+        <img
+          src="assets/images/ia/foottable.png"
+          alt="Food table"
+          class="rounded-lg object-cover w-full h-auto"
+        />
+      </div>
+
+      <!-- Recipes Section -->
+      <section class="px-6 py-16">
+        <h3 class="text-xl font-semibold mb-1">The recipes</h3>
+        <p class="text-gray-500 mb-8">
+          These are the recipes of the best contestants
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Recipe 1 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h4 class="font-semibold">Cajun seafood pasta</h4>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-20 min-w-14 bg-gray-200 rounded-full">
+                <img
+                  class="rounded-full overflow-hidden"
+                  src="assets/images/speakers/persona1.png"
+                />
+              </div>
+              <div>
+                <p class="text-sm font-medium">John Cooper</p>
+                <p class="text-xs text-gray-500">
+                  This Cajun seafood pasta recipe is a hot one, but delicious!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Recipe 2 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h4 class="font-semibold">Cedar planked salmon</h4>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="bg-gray-200 rounded-full w-20 min-w-14">
+                <img
+                  class="rounded-full overflow-hidden"
+                  src="assets/images/speakers/persona2.png"
+                />
+              </div>
+              <div>
+                <p class="text-sm font-medium">Marta Alonso</p>
+                <p class="text-xs text-gray-500">
+                  Salmon reaches its full potential when it's grilled on top of
+                  a cedar plank.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Recipe 3 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h4 class="font-semibold">Poulet au vinaigre</h4>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="bg-gray-200 rounded-full w-20 min-w-14">
+                <img
+                  class="rounded-full overflow-hidden"
+                  src="assets/images/speakers/persona3.png"
+                />
+              </div>
+              <div>
+                <p class="text-sm font-medium">Mary Ann Stones</p>
+                <p class="text-xs text-gray-500">
+                  Irresistible chicken, cooked with vinegar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-white border-t border-gray-200 py-10 px-6 text-sm">
+        <div class="flex flex-col md:flex-row md:justify-between gap-8">
+          <div>
+            <p class="font-medium mb-4">Cooking contest 2024 edition</p>
+            <div class="flex gap-4 text-gray-500 items-center">
+              <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
+              <a href="#"><i class="fab fa-github fa-2xl"></i></a>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-12">
+            <div>
+              <p class="font-semibold mb-2">Recipes</p>
+              <ul class="text-gray-600 space-y-2">
+                <li>Cajun seafood pasta</li>
+                <li>Cedar planked salmon</li>
+                <li>Poulet au vinaigre</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Contestants</p>
+              <ul class="text-gray-600 space-y-2">
+                <li>John Cooper</li>
+                <li>Marta Alonso</li>
+                <li>Mary Ann Stones</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Contest editions</p>
+              <ul class="text-gray-600 space-y-2">
+                <li>2024</li>
+                <li>2023</li>
+                <li>2022</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <include src="./views/footer.html"></include>
+  </body>
+</html>
