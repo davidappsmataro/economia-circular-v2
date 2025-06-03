@@ -1,0 +1,29 @@
+<article class="flex flex-col justify-center items-center">
+  <div
+    class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
+  >
+    <picture>
+      <source
+        srcset="
+          {{url}}/{{image}}?as=webp&width=504 504w,
+          {{url}}/{{image}}?as=webp&width=252 252w
+        "
+        sizes="252px"
+        type="image/webp"
+      />
+      <img
+        class="w-full"
+        src="{{url}}/{{image}}"
+        alt="Imagen de {{name}}"
+        width="252"
+        loading="lazy"
+      />
+    </picture>
+    <div class="p-6">
+      <h5 class="text-xl font-medium">{{name}}</h5>
+      <h6 class="font-medium leading-5 mt-2 mb-2">{{title}}</h6>
+      <p class="text-gray-500 text-lg">{{date}}</p>
+      <a href="#" class="button-primary mt-3">+Info</a>
+    </div>
+  </div>
+</article>

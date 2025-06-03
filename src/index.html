@@ -12,7 +12,6 @@
   </head>
   <body>
     <include src="./views/header.html"></include>
-
     <main class="max-w-[1140px] mx-auto">
       <section class="p-8">
         <h1 class="mt-12 font-medium text-4xl text-center">
@@ -31,296 +30,88 @@
       </section>
 
       <section class="flex flex-wrap justify-around gap-y-8 gap-x-4 w-full p-8">
-        <!-- <section
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 w-full justify-items-center"
-      > -->
-        <article class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona1.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona1.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona1.png"
-                alt="Imagen de María López"
-                width="252"
-              />
-            </picture>
 
-            <div class="p-6">
-              <h5 class="text-xl font-medium">María López</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                Innovación en la gestión de residuos urbanos
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 15 de mayo de 2025</p>
-              <!--  <p class="speakers__main-list-item-card-text card-text">
-                Descubre cómo las ciudades pueden implementar estrategias
-                innovadoras para reducir, reutilizar y reciclar residuos,
-                fomentando un modelo de economía circular.
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona2.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona2.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona2.png"
-                alt="Imagen de Javier Gómez"
-                width="252"
-                loading="lazy"
-              />
-            </picture>
-            <div class="p-6">
-              <h5 class="text-xl font-medium">Carlos Fernández</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                El papel de las empresas en la economía circular
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 16 de mayo de 2025</p>
-              <!--  <p class="speakers__main-list-item-card-text card-text">
-                Una charla sobre cómo las empresas pueden adoptar modelos de
-                negocio sostenibles y generar valor a través de la reutilización
-                de recursos.
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona5.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona5.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona5.png"
-                alt="Imagen de Ana Martínez"
-                width="252"
-                loading="lazy"
-              />
-            </picture>
-            <div class="p-6">
-              <h5 class="text-xl font-medium">Ana Martínez</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                Diseño sostenible: productos para un futuro circular
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 18 de mayo de 2025</p>
-              <!--   <p class="speakers__main-list-item-card-text card-text">
-                Aprende cómo el diseño de productos puede ser clave para reducir
-                el impacto ambiental y fomentar la reutilización de materiales.
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona6.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona6.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona6.png"
-                alt="Imagen de Carlos Fernández"
-                width="252"
-                loading="lazy"
-              />
-            </picture>
-            <div class="p-6">
-              <h5 class="text-xl font-medium">Pedro Ruiz</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                Tecnología y economía circular: aliados para el cambio
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 19 de mayo de 2025</p>
-              <!--  <p class="card-text text-truncate">
-                Descubre cómo la tecnología puede impulsar la transición hacia
-                un modelo económico más sostenible y eficiente.
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
-        <article id="jgomez" class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona3.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona3.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona3.png"
-                alt="Imagen de Javier Gómez"
-                width="252"
-                loading="lazy"
-              />
-            </picture>
-            <div class="p-6">
-              <h5 class="text-xl font-medium">Javier Gómez</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                Economía circular en la agricultura
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 20 de mayo de 2025</p>
-              <!--  <p class="card-text text-truncate">
-                Explora cómo las prácticas agrícolas pueden transformarse para
-                minimizar el desperdicio y maximizar la eficiencia de los
-                recursos.
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona7.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona7.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona7.png"
-                alt="Imagen de Laura Sánchez"
-                width="252"
-                loading="lazy"
-              />
-            </picture>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "María López",
+            "title": "Innovación en la gestión de residuos urbanos",
+            "date": "Fecha: 15 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona1.png"
+           }'
+        ></include>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "Carlos Fernández",
+            "title": "El papel de las empresas en la economía circular",
+            "date": "Fecha: 16 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona2.png"
+           }'
+        ></include>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "Ana Martínez",
+            "title": "Diseño sostenible: productos para un futuro circular",
+            "date": "Fecha: 18 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona5.png"
+           }'
+        ></include>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "Pedro Ruiz",
+            "title": "Tecnología y economía circular: aliados para el cambio",
+            "date": "Fecha: 19 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona6.png"
+           }'
+        ></include>
 
-            <div class="p-6">
-              <h5 class="text-xl font-medium">Laura Sánchez</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                Educación y conciencia para un mundo circular
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 21 de mayo de 2025</p>
-              <!--  <p class="card-text text-truncate">
-                Una charla sobre la importancia de la educación y la
-                sensibilización para fomentar hábitos sostenibles en la
-                sociedad.
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
-        <article id="ctorres" class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona8.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona8.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona8.png"
-                alt="Imagen de Clara Torres"
-                width="252"
-                loading="lazy"
-              />
-            </picture>
-            <div class="p-6">
-              <h5 class="text-xl font-medium">Clara Torres</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                El impacto de la economía circular en el cambio climático
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 22 de mayo de 2025</p>
-              <!--  <p class="card-text text-truncate">
-                Una visión sobre cómo la economía circular puede ayudar a
-                mitigar los efectos del cambio climático mediante la reducción
-                de emisiones.
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col justify-center items-center">
-          <div
-            class="rounded-lg overflow-hidden w-72 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg border border-gray-300"
-          >
-            <picture>
-              <source
-                srcset="
-                  assets/images/speakers/persona4.png?as=webp&width=504 504w,
-                  assets/images/speakers/persona4.png?as=webp&width=252 252w
-                "
-                sizes="252px"
-                type="image/webp"
-              />
-              <img
-                class="w-full"
-                src="/src/assets/images/speakers/persona4.png"
-                alt="Imagen de Miguel Hernández"
-                width="252"
-                loading="lazy"
-              />
-            </picture>
-            <div class="p-6">
-              <h5 class="text-xl font-medium">Miguel Hernández</h5>
-              <h6 class="font-medium leading-5 mt-2 mb-2">
-                Economía circular en la industria textil
-              </h6>
-              <p class="text-gray-500 text-lg">Fecha: 23 de mayo de 2025</p>
-              <!--  <p class="card-text text-truncate">
-                Aprende cómo la industria de la moda puede adoptar prácticas
-                circulares para reducir el desperdicio y fomentar la
-                sostenibilidad
-              </p> -->
-              <a href="#" class="button-primary mt-3">+Info</a>
-            </div>
-          </div>
-        </article>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "Javier Gómez",
+            "title": "Economía circular en la agricultura",
+            "date": "Fecha: 20 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona3.png"
+           }'
+        ></include>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "Laura Sánchez",
+            "title": "Educación y conciencia para un mundo circular",
+            "date": "Fecha: 21 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona7.png"
+           }'
+        ></include>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "Clara Torres",
+            "title": "El impacto de la economía circular en el cambio climático",
+            "date": "Fecha: 22 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona8.png"
+           }'
+        ></include>
+        <include
+          src="./views/card.html"
+          locals='{
+            "name": "Miguel Hernández",
+            "title": "Economía circular en la industria textil",
+            "date": "Fecha: 23 de mayo de 2025",
+            "url": "/src/assets/images/speakers",
+            "image": "persona4.png"
+           }'
+        ></include>
       </section>
     </main>
     <include src="./views/footer.html"></include>
