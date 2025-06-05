@@ -1,144 +1,188 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white text-gray-800">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cooking contest 2024 edition</title>
     <link rel="stylesheet" href="./assets/styles/main.scss" />
   </head>
-
-  <body>
+  <body class="bg-white text-black">
     <include src="./views/header.html"></include>
-    <main class="font-sans">
-      <!-- Navbar -->
-      <nav class="flex justify-between items-center px-6 py-4">
-        <h1 class="text-lg font-medium">Cooking contest 2024 edition</h1>
-        <ul class="flex gap-6 text-sm">
-          <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">The contest</a></li>
-          <li><a href="#" class="hover:underline">Recipes</a></li>
-          <li>
-            <a href="#" class="px-4 py-2 rounded bg-black text-white"
-              >Contestants</a
-            >
-          </li>
-        </ul>
-      </nav>
-
+    <!-- Contenedor principal -->
+    <div class="mx-auto w-[80%] min-h-screen flex flex-col">
       <!-- Header -->
-      <header class="text-center py-16">
-        <h2 class="text-3xl font-bold">Contestants</h2>
-        <p class="text-gray-500 mt-2">
-          This section describes the recipes of the best contestants
-        </p>
+      <header class="flex justify-between items-center py-6">
+        <h1 class="text-2xl font-semibold">Cooking contest 2024 edition</h1>
+        <nav>
+          <ul class="flex gap-8 items-center text-lg">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">The contest</a></li>
+            <li><a href="#" class="hover:underline">Recipes</a></li>
+            <li>
+              <a
+                href="#"
+                class="bg-black text-white rounded-lg py-2 px-4 inline-block"
+              >
+                Contestants
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
-      <!-- Hero Image -->
-      <div class="px-6">
-        <img
-          src="assets/images/ia/foottable.png"
-          alt="Food table"
-          class="rounded-lg object-cover w-full h-auto"
-        />
-      </div>
-
-      <!-- Recipes Section -->
-      <section class="px-6 py-16">
-        <h3 class="text-xl font-semibold mb-1">The recipes</h3>
-        <p class="text-gray-500 mb-8">
-          These are the recipes of the best contestants
+      <!-- Main Content -->
+      <main class="flex-grow mt-20 text-center mx-auto">
+        <!-- Título central -->
+        <h2 class="text-3xl font-semibold mb-6">Contestants</h2>
+        <p class="mb-24 text-base">
+          This section describes the recipes of the best contestant
         </p>
-        <div class="grid md:grid-cols-3 gap-6">
-          <!-- Recipe 1 -->
-          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h4 class="font-semibold">Cajun seafood pasta</h4>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="w-20 min-w-14 bg-gray-200 rounded-full">
+
+        <!-- Imagen redondeada -->
+        <picture>
+          <!-- WebP para pantallas grandes -->
+          <source
+            type="image/webp"
+            media="(min-width: 1024px)"
+            srcset="
+              https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&fm=webp
+            "
+          />
+          <!-- WebP para pantallas medianas -->
+          <source
+            type="image/webp"
+            media="(min-width: 640px)"
+            srcset="
+              https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1024&fm=webp
+            "
+          />
+          <!-- WebP para móviles -->
+          <source
+            type="image/webp"
+            srcset="
+              https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=640&fm=webp
+            "
+          />
+
+          <!-- Fallback JPEG (por si WebP no se soporta) -->
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=640&fm=jpg"
+            alt="People eating"
+            class="w-full mx-auto rounded-xl shadow-lg mb-20 object-cover"
+            loading="lazy"
+          />
+        </picture>
+
+        <!-- Sección The recipes -->
+        <section class="text-left mb-16">
+          <h3 class="font-bold text-2xl mb-2">The recipes</h3>
+          <p class="text-gray-700 mb-10">
+            These are the recipes of the best contestants
+          </p>
+
+          <!-- Cards -->
+          <div class="flex flex-col md:flex-row gap-8">
+            <!-- Card 1 -->
+            <article class="bg-white rounded-lg shadow-md p-6 flex-1">
+              <h4 class="text-xl font-semibold mb-4">Cajun seafood pasta</h4>
+              <div class="flex items-center gap-4">
                 <img
-                  class="rounded-full overflow-hidden"
-                  src="assets/images/speakers/persona1.png"
+                  src="https://randomuser.me/api/portraits/men/45.jpg"
+                  alt="John Cooper"
+                  class="w-16 h-16 rounded-full object-cover"
                 />
+                <div>
+                  <p class="font-medium">John Cooper</p>
+                  <p class="text-sm mt-1 text-gray-600">
+                    A spicy and creamy pasta with fresh seafood and Cajun
+                    spices.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p class="text-sm font-medium">John Cooper</p>
-                <p class="text-xs text-gray-500">
-                  This Cajun seafood pasta recipe is a hot one, but delicious!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Recipe 2 -->
-          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h4 class="font-semibold">Cedar planked salmon</h4>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="bg-gray-200 rounded-full w-20 min-w-14">
+            </article>
+
+            <!-- Card 2 -->
+            <article class="bg-white rounded-lg shadow-md p-6 flex-1">
+              <h4 class="text-xl font-semibold mb-4">Cedar planked salmon</h4>
+              <div class="flex items-center gap-4">
                 <img
-                  class="rounded-full overflow-hidden"
-                  src="assets/images/speakers/persona2.png"
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="Marta Alonso"
+                  class="w-16 h-16 rounded-full object-cover"
                 />
+                <div>
+                  <p class="font-medium">Marta Alonso</p>
+                  <p class="text-sm mt-1 text-gray-600">
+                    Grilled salmon with a smoky cedar wood aroma and herbed
+                    butter.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p class="text-sm font-medium">Marta Alonso</p>
-                <p class="text-xs text-gray-500">
-                  Salmon reaches its full potential when it's grilled on top of
-                  a cedar plank.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Recipe 3 -->
-          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h4 class="font-semibold">Poulet au vinaigre</h4>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="bg-gray-200 rounded-full w-20 min-w-14">
+            </article>
+
+            <!-- Card 3 -->
+            <article class="bg-white rounded-lg shadow-md p-6 flex-1">
+              <h4 class="text-xl font-semibold mb-4">Poulet au vinaigre</h4>
+              <div class="flex items-center gap-4">
                 <img
-                  class="rounded-full overflow-hidden"
-                  src="assets/images/speakers/persona3.png"
+                  src="https://randomuser.me/api/portraits/women/22.jpg"
+                  alt="Mary Ann Stones"
+                  class="w-16 h-16 rounded-full object-cover"
                 />
+                <div>
+                  <p class="font-medium">Mary Ann Stones</p>
+                  <p class="text-sm mt-1 text-gray-600">
+                    Classic French chicken with vinegar and creamy pan sauce.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p class="text-sm font-medium">Mary Ann Stones</p>
-                <p class="text-xs text-gray-500">
-                  Irresistible chicken, cooked with vinegar.
-                </p>
-              </div>
-            </div>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <!-- Footer -->
-      <footer class="bg-white border-t border-gray-200 py-10 px-6 text-sm">
-        <div class="flex flex-col md:flex-row md:justify-between gap-8">
+      <footer class="mt-8 pt-10 pb-12 border-t border-gray-300 text-sm">
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+          <!-- Columna 1 -->
           <div>
-            <p class="font-medium mb-4">Cooking contest 2024 edition</p>
-            <div class="flex gap-4 text-gray-500 items-center">
-              <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-              <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
-              <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
-              <a href="#"><i class="fab fa-github fa-2xl"></i></a>
+            <h4 class="text-lg font-semibold mb-4">
+              Cooking contest 2024 edition
+            </h4>
+            <div class="flex gap-4 mt-14 text-gray-400">
+              <a href="#"><i class="fab fa-facebook text-xl"></i></a>
+              <a href="#"><i class="fab fa-linkedin text-xl"></i></a>
+              <a href="#"><i class="fab fa-youtube text-xl"></i></a>
+              <a href="#"><i class="fab fa-instagram text-xl"></i></a>
             </div>
           </div>
-          <div class="grid grid-cols-3 gap-12">
+
+          <!-- Columnas alineadas a la derecha pero con texto alineado a la izquierda -->
+          <div class="md:flex md:gap-16 md:ml-auto text-left">
+            <!-- Columna 2 -->
             <div>
-              <p class="font-semibold mb-2">Recipes</p>
-              <ul class="text-gray-600 space-y-2">
+              <h5 class="font-bold mb-3">Recipes</h5>
+              <ul class="space-y-3">
                 <li>Cajun seafood pasta</li>
                 <li>Cedar planked salmon</li>
                 <li>Poulet au vinaigre</li>
               </ul>
             </div>
+
+            <!-- Columna 3 -->
             <div>
-              <p class="font-semibold mb-2">Contestants</p>
-              <ul class="text-gray-600 space-y-2">
+              <h5 class="font-bold mb-3">Contestants</h5>
+              <ul class="space-y-3">
                 <li>John Cooper</li>
                 <li>Marta Alonso</li>
                 <li>Mary Ann Stones</li>
               </ul>
             </div>
+
+            <!-- Columna 4 -->
             <div>
-              <p class="font-semibold mb-2">Contest editions</p>
-              <ul class="text-gray-600 space-y-2">
+              <h5 class="font-bold mb-3">Contest editions</h5>
+              <ul class="space-y-3">
                 <li>2024</li>
                 <li>2023</li>
                 <li>2022</li>
@@ -147,7 +191,6 @@
           </div>
         </div>
       </footer>
-    </main>
-    <include src="./views/footer.html"></include>
+    </div>
   </body>
 </html>
